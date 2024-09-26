@@ -3,78 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Affiliate Links Slideshow</title>
+    <title>Affiliate Engagement Store</title>
     <style>
-        /* Style for the scrollable container */
-        .slideshow-container {
+        /* General styles for the landing page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
             width: 100%;
-            overflow-x: auto;
-            white-space: nowrap;
-            border: 2px solid #ddd;
-            padding: 10px;
-            box-sizing: border-box;
+            top: 0;
+            z-index: 1000;
         }
-        .slideshow-container a {
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .container {
+            margin: 100px auto;
+            padding: 20px;
+            max-width: 1200px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .grid-item {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+        .grid-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .grid-item h3 {
+            margin-top: 15px;
+            font-size: 20px;
+        }
+        .grid-item p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .cta-button {
+            background-color: #ff5733;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
             display: inline-block;
-            margin: 10px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
         }
-        /* Add some smooth scrolling behavior */
-        .slideshow-container::-webkit-scrollbar {
-            height: 10px;
+        .cta-button:hover {
+            background-color: #ff3300;
         }
-        .slideshow-container::-webkit-scrollbar-thumb {
-            background-color: #888;
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            color: white;
+            margin-top: 50px;
+        }
+        /* Pop-up styling */
+        .popup {
+            position: fixed;
+            background: rgba(0, 0, 0, 0.8);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        .popup.active {
+            visibility: visible;
+            opacity: 1;
+        }
+        .popup-content {
+            background: white;
+            padding: 30px;
             border-radius: 10px;
+            text-align: center;
+            max-width: 400px;
         }
-        .slideshow-container::-webkit-scrollbar-track {
-            background: #f1f1f1;
+        .popup-content h3 {
+            margin: 0 0 20px;
+        }
+        .close-btn {
+            background-color: #ff5733;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
 
-<div class="slideshow-container">
-    <a href="https://www.dpbolvw.net/click-101009670-15642518" target="_top">
-        <img src="https://www.tqlkg.com/image-101009670-15642518" width="628" height="628" alt="AI App Builder" border="0"/>
-    </a>
-    <a href="https://www.tkqlhce.com/click-101009670-15520667" target="_top">
-        <img src="https://www.ftjcfx.com/image-101009670-15520667" width="480" height="480" alt="GameFly Video Game Rentals Save You Money" border="0"/>
-    </a>
-    <a href="https://www.tkqlhce.com/click-101009670-15718687" target="_top">
-        <img src="https://www.tqlkg.com/image-101009670-15718687" width="320" height="50" alt="" border="0"/>
-    </a>
-    <a href="https://www.anrdoezrs.net/click-101009670-13807887" target="_top">
-        Streamline your small business and get your time back. Try out Jobber for free today!
-    </a>
-    <img src="https://www.lduhtrp.net/image-101009670-13807887" width="1" height="1" border="0"/>
-    <a href="https://www.jdoqocy.com/click-101009670-15600935" target="_top">
-        <img src="https://www.awltovhc.com/image-101009670-15600935" width="120" height="600" alt="" border="0"/>
-    </a>
-    <a href="https://www.tkqlhce.com/click-101009670-15768950" target="_top">
-        <img src="https://www.tqlkg.com/image-101009670-15768950" width="960" height="1200" alt="" border="0"/>
-    </a>
-    <a href="https://www.tkqlhce.com/click-101009670-13817793" target="_top">
-        <img src="https://www.tqlkg.com/image-101009670-13817793" width="970" height="90" alt="Free US & UK Shipping" border="0"/>
-    </a>
-    <a href="https://www.dpbolvw.net/click-101009670-15640651" target="_top">
-        <img src="https://www.awltovhc.com/image-101009670-15640651" width="1500" height="300" alt="" border="0"/>
-    </a>
-    <a href="https://www.jdoqocy.com/click-101009670-15587241" target="_top">
-        <img src="https://www.ftjcfx.com/image-101009670-15587241" width="250" height="250" alt="" border="0"/>
-    </a>
-    <a href="https://www.dpbolvw.net/click-101009670-13625035" target="_top">
-        <img src="https://www.tqlkg.com/image-101009670-13625035" width="300" height="250" alt="" border="0"/>
-    </a>
-    <a href="https://www.anrdoezrs.net/click-101009670-15612843" target="_top">
-        <img src="https://www.lduhtrp.net/image-101009670-15612843" width="120" height="600" alt="" border="0"/>
-    </a>
-    <a href="https://www.jdoqocy.com/click-101009670-12222003" target="_top">
-        <img src="https://www.ftjcfx.com/image-101009670-12222003" width="728" height="90" alt="" border="0"/>
-    </a>
-    <a href="https://www.anrdoezrs.net/click-101009670-10479439" target="_top">
-        <img src="https://www.tqlkg.com/image-101009670-10479439" width="468" height="60" alt="Help Your Club And Shop SoccerGarage.com" border="0"/>
-    </a>
-</div>
+<header>
+    <h1>Engage with the Future</h1>
+</header>
 
-</body>
-</html>
+<div class="container">
+    <!-- Product Grid -->
+    <div class="grid-container">
+        <!-- AI App Builder -->
+        <div class="grid-item">
+            <img src="https://www.tqlkg.com/image-101009670-15642518" alt="AI App Builder">
+            <h3>AI App Builder</h3>
+            <p>Create your own AI apps seamlessly with our easy-to-use platform!</p>
+            <a class="cta-button" href="https://www.dpbolvw.net/click-101009670-15642518" target="_top">Try it Now</a>
+        </div>
+
+        <!-- GameFly -->
+        <div class="grid-item">
+            <img src="https://www.ftjcfx.com/image-101009670-15520667" alt="GameFly">
+            <h3>GameFly Rentals</h3>
+            <p>Rent the latest video games and save money! Join GameFly today.</p>
+            <a class="cta-button" href="https://www.tkqlhce.com/click-101009670-15520667" target="_top">Rent Games</a>
+        </div>
+
+        <!-- SoccerGarage -->
+        <div class="grid-item">
+            <img src="https://www
